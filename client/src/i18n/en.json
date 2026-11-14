@@ -1,0 +1,757 @@
+{
+  "app": {
+    "name": "India Energy Planner",
+    "short1": "India Energy",
+    "short2": "PLANNER"
+  },
+  "nav": {
+    "home": "Home",
+    "map": "Map",
+    "planner": "Planner",
+    "costs": "Costs",
+    "rollout": "Rollout",
+    "impact": "Impact",
+    "subsidies": "Subsidies",
+    "help": "Help",
+    "complaints": "Complaints",
+    "heatmap": "Heatmap",
+    "more": "More",
+    "main": "Main navigation",
+    "skip": "Skip to content",
+    "language": "Language",
+    "soon": "soon",
+    "lightMode": "Switch to light mode",
+    "darkMode": "Switch to dark mode",
+    "pickDistrict": "Pick a district",
+    "noDistrict": "No district selected. Open the map to pick one",
+    "districtChip": "Selected district: {{name}}. Open the map"
+  },
+  "common": {
+    "close": "Close",
+    "dismiss": "Dismiss",
+    "reset": "Reset",
+    "retry": "Try again"
+  },
+  "units": {
+    "lakh": "lakh",
+    "crore": "crore",
+    "lakhPlus": "lakh+ homes",
+    "yr": "yr",
+    "mo": "month",
+    "years": "years",
+    "day": "day"
+  },
+  "months": {
+    "jan": "Jan",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Apr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "aug": "Aug",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dec"
+  },
+  "badges": {
+    "illustrative": "Illustrative",
+    "illustrativeHint": "Values come from published tiers, not measured district data. Replace with NASA POWER data (see README).",
+    "assumption": "Assumption",
+    "assumptionHint": "Our estimate. Verify locally before using it for a decision.",
+    "sourced": "Sourced"
+  },
+  "errors": {
+    "dataTitle": "Couldn't load the planning data",
+    "dataBody": "The district and cost files didn't load. Check your connection, or reload once the app has been opened online at least once."
+  },
+  "picker": {
+    "placeholder": "Search 50 districts or states",
+    "none": "No district matches that search"
+  },
+  "gate": {
+    "title": "Pick a district to start",
+    "body": "Designs, costs and rollout plans are made for one district at a time. Search for one, or try a suggestion.",
+    "openMap": "Choose on the 3D map"
+  },
+  "footer": {
+    "disclaimer": "Planning estimates from monthly averages and published benchmarks. Not a guarantee, a tender document or financial advice. Verify scheme details on official sites.",
+    "credit": "Built for FlairQuest 2.0 Ideathon · Track 8: Energy & Resource Management",
+    "data": "Data",
+    "sources": "Data sources",
+    "assumptions": "Assumptions",
+    "boundary": "Map boundary",
+    "explore": "Explore"
+  },
+  "res": {
+    "solar": "Solar",
+    "wind": "Wind",
+    "hydro": "Hydro",
+    "hydroLong": "Small hydro",
+    "biomass": "Biomass",
+    "geothermal": "Geothermal",
+    "diesel": "Diesel",
+    "battery": "Battery"
+  },
+  "tiers": {
+    "none": "None",
+    "low": "Low",
+    "med": "Medium",
+    "high": "High"
+  },
+  "grid": {
+    "good": "Good",
+    "weak": "Weak",
+    "offgrid": "Off-grid"
+  },
+  "categories": {
+    "border": "Border & Himalayan",
+    "desert": "Desert & high sun",
+    "wind": "Wind corridor",
+    "hydro": "Hill & hydro",
+    "flood": "Flood-prone",
+    "tribal": "Tribal & forest",
+    "island": "Island",
+    "demand": "Demand centre"
+  },
+  "loads": {
+    "homes": "Homes",
+    "clinic": "Clinic",
+    "school": "School",
+    "pumps": "Water pumps",
+    "streetlights": "Streetlights",
+    "other": "Other loads"
+  },
+  "options": {
+    "solar": "Solar + battery",
+    "solar_hydro": "Solar + small hydro",
+    "solar_wind": "Solar + wind",
+    "solar_diesel": "Solar + diesel backup",
+    "none": "No design yet",
+    "recommendedShort": "Recommended",
+    "switcher": "Design shown",
+    "unavailable": {
+      "hydro": "Not suitable here: small hydro potential is below medium.",
+      "wind": "Not suitable here: wind is too weak for a small turbine.",
+      "noDemand": "Add some demand to size this option.",
+      "generic": "Not available for this district."
+    }
+  },
+  "home": {
+    "eyebrow": "FlairQuest 2.0 · Energy & resource management",
+    "title1": "Plan reliable power for",
+    "title2": "every Indian district.",
+    "sub": "Pick a district on the 3D map, describe local demand, and get a priced solar, wind, hydro, battery and diesel design with a month-by-month rollout.",
+    "cta": "Plan a district",
+    "cta2": "Open the planner",
+    "quick": "Quick district search",
+    "quickPlaceholder": "Try Leh, Jaisalmer or Idukki",
+    "heroAria": "3D map of India with the 50 planning districts as glowing points. Pillar height shows estimated demand; arcs link demand centres to nearby high-solar and high-wind districts.",
+    "figures": {
+      "peak": {
+        "label": "All-time peak power demand",
+        "date": "19 May 2026",
+        "source": "Pulse"
+      },
+      "meters": {
+        "label": "Smart meters installed",
+        "date": "As of 30 Jun 2026",
+        "source": "T&D India"
+      },
+      "homes": {
+        "label": "PM Surya Ghar rooftop homes",
+        "date": "Aug 2026",
+        "source": "Mercom"
+      },
+      "rooftop": {
+        "label": "PM Surya Ghar capacity",
+        "date": "Aug 2026",
+        "source": "Mercom"
+      }
+    },
+    "howEyebrow": "How it works",
+    "howTitle": "From a dot on the map to a costed, phased plan",
+    "steps": {
+      "pick": {
+        "title": "Pick a district",
+        "body": "See its solar, wind, hydro, biomass and geothermal potential."
+      },
+      "describe": {
+        "title": "Describe demand",
+        "body": "Homes, a clinic, a school, water pumps, streetlights."
+      },
+      "design": {
+        "title": "Auto-design",
+        "body": "Sized so the worst month still meets ≥99% of demand."
+      },
+      "price": {
+        "title": "Price 20 years",
+        "body": "Capex, O&M, battery swaps, fuel, ₹/kWh and payback."
+      },
+      "rollout": {
+        "title": "Roll it out",
+        "body": "Critical loads first, then homes in batches, within budget."
+      }
+    },
+    "sectionsEyebrow": "Explore",
+    "sectionsTitle": "Every part of the plan",
+    "cards": {
+      "map": "Interactive 3D map with five data layers and district profiles.",
+      "planner": "Build demand, size the system, watch it run day and night.",
+      "costs": "Compare four hybrid options over 20 years.",
+      "rollout": "Month-by-month schedule, budget phases and 3D build-up.",
+      "impact": "CO₂ and diesel avoided, homes served, ranked across districts.",
+      "subsidies": "Match central and state schemes to your project.",
+      "help": "Searchable answers and an AI planning assistant.",
+      "complaints": "Helplines, and log and track power complaints.",
+      "heatmap": "3D outage map from logged complaints."
+    },
+    "sideNote": "Solar, wind, small hydro, battery and diesel: sized, priced and phased for 50 Indian districts.",
+    "bigWord": "POWER",
+    "bigLine2": "for every district.",
+    "crystalAria": "Rotating 3D energy crystal",
+    "scrollHint": "Scroll to light up India",
+    "scroll": {
+      "eyebrow": "India, district by district",
+      "s1": {
+        "title": "One country. 50 districts.",
+        "body": "From the Himalaya to the islands: borders, deserts, wind corridors, hills, floodplains, forests and cities, on the official map of India."
+      },
+      "s2": {
+        "title": "The lights come on.",
+        "body": "Each point is a district; the taller the pillar, the bigger its demand. Pick any one and the planner designs its system."
+      },
+      "s3": {
+        "title": "Power flows where the sun and wind are.",
+        "body": "Arcs link big demand centres to nearby high-solar and high-wind districts: where clean power is cheapest to make."
+      }
+    }
+  },
+  "map": {
+    "title": "District map",
+    "sceneAria": "Interactive 3D map of India. Each hexagonal column is a district, coloured and sized by the chosen layer. Use the district list or search to select one with the keyboard.",
+    "mapAria": "2D map of India with district points",
+    "listAria": "Districts on the map",
+    "layer": "Layer",
+    "layers": {
+      "best": "Best resource",
+      "impact": "Impact score",
+      "solar": "Solar potential",
+      "wind": "Wind potential",
+      "demand": "Demand"
+    },
+    "legend": {
+      "impact": {
+        "low": "Lower impact",
+        "high": "Higher impact"
+      },
+      "solar": {
+        "low": "3.8 kWh/m²/day",
+        "high": "6.4+"
+      },
+      "wind": {
+        "low": "2.8 m/s",
+        "high": "7.2+ m/s"
+      },
+      "demand": {
+        "low": "Smaller",
+        "high": "Larger (MWh/yr)"
+      }
+    },
+    "legendNote": "Column height also follows the layer value. Data is illustrative.",
+    "computing": "Scoring all 50 districts…",
+    "search": "Search a district",
+    "boundaryError": "The map boundary failed to load.",
+    "profileAria": "{{name}} district profile",
+    "population": "Population (est.)",
+    "demand": "Demand (est.)",
+    "grid": "Grid access",
+    "dieselDep": "Diesel dependence",
+    "resources": "Resources",
+    "solarVal": "{{v}} kWh/m²/day · worst {{worst}} {{w}}",
+    "windVal": "{{v}} m/s at 50 m · CF {{cf}}%",
+    "geoPotential": "Potential",
+    "geoNote": "Geothermal is pilot-stage only in India (e.g. Puga in Ladakh, Manikaran in Himachal). Shown as potential; never sized in a design.",
+    "bestFit": "Best resource here: {{res}}",
+    "bestFitBody": "For a default village (100 homes, clinic, school, 4 pumps) the cheapest reliable design is {{option}}: about {{capex}} upfront, ₹{{lcoe}}/kWh over 20 years.",
+    "bestFitNote": "Estimate from monthly averages, not a guarantee.",
+    "planThis": "Plan this district",
+    "dioramaAria": "Mini 3D scene of {{name}}'s resources: {{items}}"
+  },
+  "scene": {
+    "aria": "3D diagram of the energy system",
+    "view2d": "2D view",
+    "view3d": "3D view",
+    "pv": "PV {{v}} kWp",
+    "battery": "Battery {{v}} kWh",
+    "wind": "Wind {{v}} kW",
+    "hydro": "Hydro {{v}} kW",
+    "diesel": "Diesel {{v}} kVA",
+    "dieselOff": "Diesel not used",
+    "homes": "{{n}} homes",
+    "generation": "Generation",
+    "loads": "Loads"
+  },
+  "demand": {
+    "title": "Local demand",
+    "homes": "Homes",
+    "homeTier": "Use per home",
+    "tiers": {
+      "basic": "Basic · 1.5 kWh/day",
+      "standard": "Standard · 3 kWh/day",
+      "high": "High · 6 kWh/day"
+    },
+    "clinic": "Health clinic",
+    "clinicKwh": "Clinic use per day",
+    "critical": "Critical load",
+    "school": "School",
+    "schoolKwh": "School use per day",
+    "pumps": "Water pumps",
+    "count": "Count",
+    "hp": "HP each",
+    "hours": "Hours/day",
+    "streetlights": "Streetlights & other",
+    "watts": "Watts each",
+    "other": "Other/day"
+  },
+  "scenario": {
+    "title": "Scenarios",
+    "growth": "Demand growth",
+    "diesel": "Diesel price",
+    "chemistry": "Battery type",
+    "lfp": "LFP",
+    "leadacid": "Lead-acid",
+    "battery": "Battery cost",
+    "storm": "Storm / low-sun spell",
+    "stormHint": "Consecutive low-sun days in the worst month (solar at 35%). Also sets battery autonomy 1–2 days.",
+    "days_one": "{{count}} day",
+    "days_other": "{{count}} days",
+    "hydro": "Hydro flow reduction",
+    "hydroHint": "Cuts small-hydro output in dry months.",
+    "solar": "Solar installed cost",
+    "grid": "Grid tariff (for payback)"
+  },
+  "planner": {
+    "eyebrow": "Planner",
+    "title": "{{name}}: system design",
+    "sub": "Describe local demand; the engine sizes PV and storage so the worst month still meets at least 99% of demand.",
+    "change": "Change district",
+    "tiles": {
+      "demand": "Daily demand",
+      "peak": "Peak {{v}} kW",
+      "pv": "Solar PV",
+      "pvSub": "Avg {{v}} kWh/m²/day",
+      "battery": "Battery",
+      "rel": "Worst-month reliability",
+      "relSub": "Worst month: {{m}} · target 99%",
+      "relAria": "Worst-month reliability {{pct}} percent",
+      "mix": "Recommended mix",
+      "isRec": "Cheapest design that meets the target",
+      "notRec": "You're viewing an alternative. Recommended: {{rec}}"
+    },
+    "emptyDemand": "Add at least one load (homes, clinic, school, pumps or streetlights) to size a system.",
+    "scene": "Live system",
+    "dayNight": "Time of day",
+    "day": "Day",
+    "night": "Night",
+    "dayNote": "Daytime: solar feeds the loads and charges the battery. Flows pulse in the direction of power.",
+    "nightNote": "Night: solar is off, the battery takes over and homes and streetlights light up.",
+    "nightDiesel": "Night on a low-sun day: the battery runs first, then the diesel backup covers the rest (flows turn amber).",
+    "sceneAria": "3D diorama of the {{option}} design: {{pv}} kWp solar and {{batt}} kWh battery feeding the village loads",
+    "monthly": "Monthly generation vs demand",
+    "estimate": "Estimate from monthly averages, not a guarantee",
+    "arcAria": "Annual production compared with consumption",
+    "arcCenter": "production ÷ demand",
+    "arcNote": "Above 100% means surplus energy is curtailed or charges the battery; storage losses are included."
+  },
+  "charts": {
+    "demand": "Demand",
+    "monthlyAria": "Monthly generation by source against demand. Worst month {{worst}} at {{pct}} percent of demand met.",
+    "year": "Year",
+    "capex": "Capex & top-ups",
+    "om": "O&M",
+    "battery": "Battery swaps",
+    "fuel": "Diesel fuel",
+    "dieselOnly": "Diesel-only",
+    "grid": "Grid power",
+    "breakEvenDiesel": "Beats diesel · yr {{y}}",
+    "breakEvenGrid": "Beats grid · yr {{y}}",
+    "lifecycleAria": "Cumulative 20-year cost: {{total}} compared with {{diesel}} for diesel only. Pays back against diesel in year {{payback}}.",
+    "spendAria": "Rollout spending: {{total}} over {{months}} months",
+    "monthlySpend": "Monthly spend",
+    "cumulative": "Cumulative",
+    "budgetCap": "Budget cap"
+  },
+  "costs": {
+    "eyebrow": "Costs",
+    "title": "{{name}}: 20-year costs",
+    "sub": "Four hybrid options priced over 20 years with escalating O&M, battery replacement, diesel fuel and degradation.",
+    "tiles": {
+      "capex": "Upfront cost",
+      "npv": "20-year cost (NPV)",
+      "npvSub": "Discounted at {{r}}%",
+      "lcoe": "Levelised cost",
+      "lcoeSub": "Per kWh delivered, 20 years",
+      "payback": "Payback vs diesel",
+      "paybackSub": "Against a diesel-only village"
+    },
+    "options": "Compare options",
+    "recommended": "Recommended",
+    "show": "Show this option",
+    "showing": "Showing",
+    "belowTarget": "Doesn't reach 99% in the worst month within sizing limits.",
+    "localQuote": "Wind and small-hydro costs are our assumption: get a local quote.",
+    "card": {
+      "capex": "Capex",
+      "npv": "20-yr cost (NPV)",
+      "nominal": "20-yr cost (nominal)",
+      "lcoe": "Cost per kWh",
+      "payback": "Payback vs diesel",
+      "paybackGrid": "Payback vs grid",
+      "year": "Year {{y}}",
+      "never": "Not within 20 yrs",
+      "diesel": "Diesel, year 1",
+      "rel": "Worst month met"
+    },
+    "lifecycle": "Cumulative cost over 20 years",
+    "lifecycleNote": "Nominal rupees. Capacity is topped up every 5 years to match demand growth. LFP is replaced once at year 11; lead-acid every 4 years. Diesel price escalates 4%/yr (assumption).",
+    "keyAssumptions": "Key cost assumptions",
+    "allAssumptions": "All data & assumptions"
+  },
+  "rollout": {
+    "eyebrow": "Rollout",
+    "title": "{{name}}: rollout plan",
+    "sub": "Monthly schedule for the {{option}} design: survey first, critical loads next, then homes in batches.",
+    "tiles": {
+      "total": "Project cost",
+      "totalSub": "Includes {{pct}}% survey & design",
+      "months": "Months needed",
+      "monthsUnit": "of {{n}}",
+      "onTime": "Fits in the time available",
+      "late": "Over the time available",
+      "budgetNeeded": "Monthly budget needed",
+      "budgetNeededSub": "To finish in {{n}} months",
+      "critical": "Critical loads live",
+      "criticalSub": "Clinic, school and pumps powered"
+    },
+    "infeasible": "At this budget the rollout needs {{needed}} months, but only {{available}} are available. Raise the monthly budget to about {{budget}} or allow more time.",
+    "noBudget": "Set a monthly budget above zero to schedule the rollout.",
+    "inputs": "Inputs",
+    "start": "Start month",
+    "monthsAvailable": "Months available",
+    "monthsN": "{{n}} months",
+    "budget": "Monthly budget cap",
+    "batch": "Homes per batch",
+    "note": "Each phase's cost is its share of the system, by energy use. A phase can start in the same month the previous one finishes.",
+    "gantt": "Schedule",
+    "ganttCaption": "Rollout phases with start and end months and cost",
+    "phase": "Phase",
+    "cost": "Cost",
+    "critical": "critical",
+    "homesBatch": "Homes · batch {{b}} ({{n}})",
+    "phases": {
+      "survey": "Survey, design & permits",
+      "clinic": "Clinic",
+      "school": "School",
+      "pumps": "Water pumps",
+      "streetlights": "Streetlights",
+      "other": "Other loads"
+    },
+    "legendCritical": "Critical loads",
+    "legendHomes": "Homes & other",
+    "buildUp": "3D build-up",
+    "scrub": "Month",
+    "play": "Play build-up",
+    "pause": "Pause build-up",
+    "sceneAria": "3D build-up at {{month}}: {{pct}} percent of the system built",
+    "spend": "Spending"
+  },
+  "data": {
+    "eyebrow": "Data & assumptions",
+    "title": "Where every number comes from",
+    "sub": "Sourced figures link to their source. Everything else is labelled as an assumption or illustrative.",
+    "sourcesTitle": "Sources",
+    "extraSources": [
+      {
+        "title": "PM Surya Ghar CFA structure (JBVNL)",
+        "url": "https://jbvnl.co.in/SOLAR/CFA_structure%20for%20PM%20Suryaghar.pdf"
+      },
+      {
+        "title": "PM-KUSUM (PEDA)",
+        "url": "https://www.peda.gov.in/pm-kusum"
+      },
+      {
+        "title": "Solar irradiance tiers (InfraLens; MNRE Solar Atlas + Solargis)",
+        "url": "https://infralens.in/maps/solar"
+      },
+      {
+        "title": "1912 electricity call centre (Ministry of Power)",
+        "url": "https://powermin.gov.in/en/content/electricity-call-center"
+      },
+      {
+        "title": "Tata Power-DDL customer charter 2025",
+        "url": "https://www.tatapower-ddl.com/Editor_UploadedDocuments/Content/Customer_Charter_2025.pdf"
+      },
+      {
+        "title": "Peak demand 260.45 GW (Pulse, May 2026)",
+        "url": "https://www.pulse.bot/energy/news/indias-peak-power-demand-hits-record-high-of-260-gw-b30e4968-2d2d-4f66-b61c-84e746052fbc/"
+      },
+      {
+        "title": "Smart meters 7.24 crore (T&D India, Jun 2026)",
+        "url": "https://www.tndindia.com/indias-smart-meter-population-at-7-24-crore-parliament/amp/"
+      },
+      {
+        "title": "PM Surya Ghar 50 lakh homes, 14.8 GW (Mercom, Aug 2026)",
+        "url": "https://mercomindia.com/pm-surya-ghar-powers-5-million-homes-total-capacity-hits-15-gw"
+      },
+      {
+        "title": "NASA POWER Data Access Viewer",
+        "url": "https://power.larc.nasa.gov/data-access-viewer/"
+      },
+      {
+        "title": "India boundary: DataMeet maps, Survey of India state boundaries (CC BY 4.0)",
+        "url": "https://github.com/datameet/maps"
+      }
+    ],
+    "costsTitle": "Cost defaults (costs.json)",
+    "item": "Item",
+    "value": "Value",
+    "kind": "Type",
+    "source": "Source",
+    "range": "Slider range {{min}} – {{max}}",
+    "ourAssumption": "Our assumption",
+    "engineTitle": "Engine assumptions",
+    "engine": {
+      "monthly": "Energy balance uses each month's average day (hourly solar shape from day length), not hourly weather data. Estimate from monthly averages, not a guarantee.",
+      "storm": "The worst solar month includes one low-sun spell of 1–5 days with solar at 35% of that month's average, followed by recovery days.",
+      "autonomy": "Battery = night-time demand × autonomy (1 day at 1 storm day, rising to 2 days at 5) ÷ (depth of discharge × round-trip efficiency). LFP: 80% DoD, 90% RTE.",
+      "greedy": "PV starts at demand ÷ (worst-month GHI × 0.75) × 1.1, then PV (+6%) or battery (+10%) is added, whichever removes more shortfall per rupee, until the worst month meets ≥99%.",
+      "diesel": "Solar + diesel: PV on the average month, one night of battery, and a generator (peak ÷ 0.8 × 1.2 kVA) that covers any shortfall at 3.4 kWh/litre.",
+      "hydro": "Small hydro only where potential is medium or high; three sizes are tried (30/60/90% of average load, capped by site potential) and the cheapest is kept. Dry months follow a seasonal flow curve reduced by the slider.",
+      "wind": "Wind only where a 20 m small turbine reaches ≥9% capacity factor (Rayleigh distribution, 3/11/25 m/s power curve, 15% losses). Three sizes are tried.",
+      "geothermal": "Geothermal is pilot-stage only in India: shown as potential, never sized.",
+      "growth": "Demand grows by the slider; capacity is topped up every 5 years. Solar degrades 0.5%/yr; the 1.1 margin covers it.",
+      "baseline": "Diesel-only baseline: generator + fuel + ₹2/kWh O&M. Grid baseline: tariff escalating 3%/yr. Payback is the first year cumulative cost falls below the baseline.",
+      "impact": "Impact score: CO₂ avoided 30%, diesel saved 25%, homes served per ₹ crore 25%, cost-efficiency (1/LCOE) 20%, min–max normalised across all 50 districts using a default village design. Grid factor 0.71 kg CO₂/kWh is an assumption to verify with CEA."
+    },
+    "districtsTitle": "District data",
+    "districtsBody": "All 50 districts carry ILLUSTRATIVE monthly solar (GHI) and wind (50 m) values from published tiers (MNRE Solar Atlas + Solargis long-term averages), with a monsoon dip for monsoon regions and a winter dip for Himalayan districts. Population and demand are rough estimates. Drop NASA POWER climatology CSVs into /data-raw and run `npm run import:nasa` to replace them with real values.",
+    "boundaryTitle": "Map boundary",
+    "boundaryBody": "The India outline and state lines come from DataMeet's Survey of India based state boundaries (States/Admin2), which include all of Jammu & Kashmir and Ladakh as per the official map of India. They were simplified for the web with mapshaper. Please verify against the Survey of India's official political map before publishing.",
+    "verify": "Flagged for your verification"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "Nothing lives at {{path}}.",
+    "home": "Back to home"
+  },
+  "impact": {
+    "eyebrow": "Impact",
+    "title": "Where clean power does the most good",
+    "sub": "A 0–100 score for every district using the same default village design (100 homes, clinic, school, 4 pumps), ranked and comparable.",
+    "assumptionHint": "Baseline diesel shares and the grid CO₂ factor (0.71 kg/kWh) are assumptions to verify with CEA.",
+    "tiles": {
+      "co2": "CO₂ avoided, all 50",
+      "co2Unit": "t/yr",
+      "diesel": "Diesel saved, all 50",
+      "dieselUnit": "lakh L/yr",
+      "homes": "Homes in the default designs",
+      "homesSub": "100 per district",
+      "top": "Highest score",
+      "topSub": "Score {{score}} / 100",
+      "perYear": "Per year, default village in each district"
+    },
+    "compare": "Compare two districts",
+    "district": "District {{k}}",
+    "scoreAria": "{{name}} impact score {{score}} out of 100",
+    "parts": {
+      "co2": "CO₂ avoided (30%)",
+      "diesel": "Diesel saved (25%)",
+      "homes": "Homes per ₹ crore (25%)",
+      "cost": "Cost-efficiency (20%)"
+    },
+    "ranked": "All 50 districts, ranked",
+    "weights": "CO₂ 30 · diesel 25 · homes 25 · cost 20",
+    "cols": {
+      "district": "District",
+      "score": "Score",
+      "co2": "CO₂ avoided (t/yr)",
+      "diesel": "Diesel saved (L/yr)",
+      "homes": "Homes per ₹ crore",
+      "lcoe": "₹/kWh",
+      "option": "Best option"
+    },
+    "note": "Each metric is min–max normalised across the 50 districts, then weighted. Homes per ₹ crore = 100 homes ÷ capex in crore ({{capex}} = 1 crore). Illustrative data."
+  },
+  "subsidies": {
+    "eyebrow": "Subsidies",
+    "title": "Schemes that match your project",
+    "sub": "Pick a state and project type to see matching central and state schemes with an estimated subsidy against your project cost.",
+    "project": "Your project",
+    "state": "State",
+    "type": "Project type",
+    "types": {
+      "home_rooftop": "Home rooftop solar (grid-connected)",
+      "home_offgrid": "Home solar (off-grid)",
+      "rwa": "Housing society / RWA",
+      "solar_pump": "Solar water pump",
+      "farm_plant": "Solar plant on farm land (0.5–2 MW)",
+      "feeder": "Agricultural feeder",
+      "village_microgrid": "Village mini-grid"
+    },
+    "kw": "System size",
+    "hp": "Pump size",
+    "houses": "Houses in the society",
+    "grid": "Grid connection available",
+    "cost": "Project cost",
+    "costAuto": "Estimated at {{v}} per kW. Type your quote to replace it.",
+    "costReset": "Use the estimate again",
+    "useDesign": "Use my {{name}} design",
+    "tiles": {
+      "total": "Estimated subsidy",
+      "totalSub": "Active schemes only; in-transition schemes not counted",
+      "net": "Your share",
+      "netSub": "Of a {{cost}} project"
+    },
+    "openQuestion": "Open question: higher support for north-eastern, hill and island states is not confirmed for the current schemes. We don't show a higher figure until it's verified.",
+    "none": "No matching schemes",
+    "noneBody": "No scheme in our list covers this project type in this state. Check your state nodal agency.",
+    "noneOffgrid": "Off-grid home systems are not eligible for PM Surya Ghar. Check state schemes with your nodal agency.",
+    "active": "Active",
+    "transition": "In transition",
+    "notEligible": "Not eligible",
+    "estimate": "Estimated subsidy",
+    "ofCost": "{{pct}}% of project cost",
+    "transitionNote": "PM-KUSUM 1.0 closed on 31 Dec 2025; version 2.0 is awaited. The estimate uses v1.0 rules for reference only.",
+    "verify": "Verify on the official site before applying",
+    "official": "Official site",
+    "reasons": {
+      "offgrid": "Off-grid systems are not eligible: grid-connected rooftop only.",
+      "noKw": "Enter a system size above zero.",
+      "needsNoGrid": "Component B is for places without a grid connection.",
+      "hp": "Component B covers pumps up to 7.5 HP.",
+      "stateShare": "State share not confirmed for this state; estimate shows the 30% central share only.",
+      "noAmount": "No fixed per-kW amount: support is through tariffs or tenders."
+    }
+  },
+  "help": {
+    "eyebrow": "Help",
+    "title": "Answers and an AI planning assistant",
+    "sub": "Search common questions, or ask the assistant about your district, design, costs and subsidies.",
+    "faqTitle": "Frequently asked questions ({{n}})",
+    "search": "Search questions",
+    "category": "Category",
+    "cats": {
+      "all": "All",
+      "options": "Options",
+      "costs": "Costs",
+      "results": "Reading results",
+      "subsidies": "Subsidies",
+      "data": "Data",
+      "help": "Using the app"
+    },
+    "noResults": "No matching questions",
+    "noResultsBody": "Try fewer words, or ask the assistant.",
+    "answerEnglish": "Answer shown in English. Translation pending native-speaker review.",
+    "chatTitle": "Planning assistant",
+    "chatSub": "Answers from your {{name}} plan, costs, subsidies and the FAQ",
+    "chatSubNone": "Pick a district for answers about your plan",
+    "chatEmpty": "Ask about options, costs, payback, subsidies or how to read your results.",
+    "suggest": {
+      "1": "Why is this option recommended?",
+      "2": "How much subsidy can a 3 kW home get?",
+      "3": "What happens if diesel gets more expensive?"
+    },
+    "chatPlaceholder": "Ask a question…",
+    "send": "Send",
+    "you": "You",
+    "assistant": "Assistant",
+    "thinking": "Writing a reply",
+    "chatDisclaimer": "AI answers can be wrong. Check scheme details on official sites. Needs internet.",
+    "fallback": {
+      "offline": "You're offline, so here are the closest FAQ answers:",
+      "notConfigured": "The AI assistant isn't set up on this server (no API key), so here are the closest FAQ answers:",
+      "error": "The assistant isn't available right now, so here are the closest FAQ answers:"
+    },
+    "noMatch": "No close FAQ match. Try different words."
+  },
+  "complaints": {
+    "eyebrow": "Complaints",
+    "title": "Report a power problem",
+    "sub": "Helplines for your state, and a complaint form that gives you a ticket ID you can track.",
+    "notice": "This routes and tracks your complaint. Repairs are done by your DISCOM. For danger (sparking wires, fallen lines, fire), call 112 or 1912 now.",
+    "national": "National helplines",
+    "stateHelp": "State helplines & DISCOMs",
+    "toVerify": "Number: to verify on the DISCOM's website",
+    "website": "Website",
+    "websiteVerify": "Website to verify",
+    "copy": "Copy {{number}}",
+    "copied": "Copied {{n}}",
+    "copyFailed": "Couldn't copy. Select the number instead.",
+    "call": "Call {{label}} on {{number}}",
+    "form": "Log a complaint",
+    "type": "Problem",
+    "district": "District",
+    "noDistricts": "No planning district in this state yet",
+    "details": "What's happening?",
+    "detailsPh": "Where, since when, and what you see",
+    "contact": "Contact (optional)",
+    "contactPh": "Phone or email",
+    "contactNote": "Never shown publicly. Used only to follow up.",
+    "submit": "Submit complaint",
+    "sending": "Sending…",
+    "offlineHint": "You're offline: it will be saved and sent automatically.",
+    "queued": "Saved offline. It will be sent when you're back online.",
+    "logged": "Complaint logged. Ticket {{id}}",
+    "synced_one": "{{count}} offline complaint sent",
+    "synced_other": "{{count}} offline complaints sent",
+    "errors": {
+      "district": "Choose a district.",
+      "details": "Describe the problem in at least 5 characters.",
+      "server": "Couldn't log the complaint. Check the details and try again."
+    },
+    "types": {
+      "outage": "Power outage",
+      "low_voltage": "Low voltage",
+      "fluctuation": "Voltage fluctuation",
+      "sparking": "Sparking wire / transformer",
+      "streetlight": "Streetlight",
+      "billing": "Billing",
+      "other": "Other"
+    },
+    "status": {
+      "logged": "Logged",
+      "routed": "Routed to DISCOM",
+      "acknowledged": "Acknowledged",
+      "resolved": "Resolved"
+    },
+    "statusAria": "Status: {{s}}",
+    "mine": "Your complaints",
+    "mineEmpty": "Complaints you log on this device appear here with their status.",
+    "waiting": "Waiting to send",
+    "recent": "Recent complaints in {{state}}",
+    "recentEmpty": "No complaints logged here yet.",
+    "listError": "Couldn't reach the server; lists may be out of date."
+  },
+  "heatmap": {
+    "eyebrow": "Heatmap",
+    "title": "Outage heatmap",
+    "sub": "Logged complaints as stacked 3D columns per district, coloured by problem type.",
+    "sample": "Sample",
+    "sampleBadge_one": "Includes {{count}} sample report",
+    "sampleBadge_other": "Includes {{count}} sample reports",
+    "type": "Problem type",
+    "allTypes": "All types",
+    "allDistricts": "All districts",
+    "reports_one": "{{count}} report",
+    "reports_other": "{{count}} reports",
+    "sceneAria": "3D map of India with stacked complaint columns in {{n}} districts",
+    "top": "Most reported",
+    "empty": "No reports for this filter.",
+    "clear": "Show all districts",
+    "offline": "Showing bundled sample reports because the server isn't reachable.",
+    "note": "Sample reports are clearly marked and are not real complaints. Column height = number of reports.",
+    "unreachable": "Can't load any reports: the app's server isn't running or can't be reached. Start it again (npm run dev) or check your connection, then retry."
+  }
+}

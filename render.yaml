@@ -1,0 +1,21 @@
+# Render Blueprint: one Node web service serving the built app + API.
+# Deploy: Render dashboard → New → Blueprint → pick this repo.
+services:
+  - type: web
+    name: india-energy-planner
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_TOKEN
+        generateValue: true
+      - key: ANTHROPIC_API_KEY
+        sync: false # optional: set in the dashboard to turn on the AI assistant
+      - key: ANTHROPIC_MODEL
+        sync: false # optional, defaults to claude-opus-5-5

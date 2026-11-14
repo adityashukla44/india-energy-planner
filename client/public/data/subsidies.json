@@ -1,0 +1,96 @@
+{
+  "version": "2026-11",
+  "note": "Scheme rules as published. Always verify on the official site before applying. Amounts are estimates.",
+  "projectTypes": ["home_rooftop", "home_offgrid", "rwa", "solar_pump", "farm_plant", "feeder", "village_microgrid"],
+  "schemes": [
+    {
+      "id": "pmsg_home",
+      "name": "PM Surya Ghar: Muft Bijli Yojana (homes)",
+      "authority": "Ministry of New and Renewable Energy",
+      "projectTypes": ["home_rooftop"],
+      "states": "all",
+      "status": "active",
+      "calc": { "type": "pmsg_home", "perKwUpTo2": 30000, "thirdKw": 18000, "max": 78000 },
+      "rules": [
+        "₹30,000 per kW for the first 2 kW",
+        "₹18,000 for the 3rd kW",
+        "Maximum ₹78,000 for systems of 3 kW and above",
+        "Grid-connected rooftop only: off-grid systems are not eligible"
+      ],
+      "url": "https://pmsuryaghar.gov.in",
+      "source": "JBVNL CFA structure; Business Today, Jul 2026"
+    },
+    {
+      "id": "pmsg_rwa",
+      "name": "PM Surya Ghar: group housing societies / RWAs",
+      "authority": "Ministry of New and Renewable Energy",
+      "projectTypes": ["rwa"],
+      "states": "all",
+      "status": "active",
+      "calc": { "type": "per_kw_capped", "perKw": 18000, "maxKw": 500, "kwPerHouse": 3 },
+      "rules": [
+        "₹18,000 per kW for common facilities, including EV charging",
+        "Up to 500 kW in total",
+        "Capped at 3 kW per house in the society"
+      ],
+      "url": "https://pmsuryaghar.gov.in",
+      "source": "JBVNL CFA structure"
+    },
+    {
+      "id": "kusum_a",
+      "name": "PM-KUSUM Component A: solar plants on farmers' land",
+      "authority": "Ministry of New and Renewable Energy",
+      "projectTypes": ["farm_plant"],
+      "states": "all",
+      "status": "transition",
+      "calc": { "type": "none" },
+      "rules": ["Grid-connected plants of 0.5–2 MW on barren or fallow farm land", "Power sold to the DISCOM at a fixed tariff"],
+      "url": "https://www.peda.gov.in/pm-kusum",
+      "source": "PEDA"
+    },
+    {
+      "id": "kusum_b",
+      "name": "PM-KUSUM Component B: standalone solar pumps",
+      "authority": "Ministry of New and Renewable Energy",
+      "projectTypes": ["solar_pump"],
+      "states": "all",
+      "status": "transition",
+      "calc": { "type": "pct", "central": 0.3, "stateShares": { "Punjab": 0.3 }, "maxHp": 7.5, "requiresNoGrid": true },
+      "rules": [
+        "Standalone solar pumps up to 7.5 HP where there is no grid",
+        "30% central support plus a state share (example: Punjab 30% central + 30% state)",
+        "State shares differ: check your state nodal agency"
+      ],
+      "url": "https://www.peda.gov.in/pm-kusum",
+      "source": "PEDA"
+    },
+    {
+      "id": "kusum_c",
+      "name": "PM-KUSUM Component C: solarising grid pumps and feeders",
+      "authority": "Ministry of New and Renewable Energy",
+      "projectTypes": ["solar_pump", "feeder"],
+      "states": "all",
+      "status": "transition",
+      "calc": { "type": "none" },
+      "rules": ["Individual grid-connected pumps, or whole agricultural feeders, solarised"],
+      "url": "https://www.peda.gov.in/pm-kusum",
+      "source": "PEDA"
+    },
+    {
+      "id": "delhi_topup",
+      "name": "Delhi state top-up for rooftop solar",
+      "authority": "Government of NCT of Delhi",
+      "projectTypes": ["home_rooftop"],
+      "states": ["Delhi"],
+      "status": "active",
+      "calc": { "type": "per_kw_capped", "perKw": 10000, "max": 30000 },
+      "rules": ["₹10,000 per kW on top of PM Surya Ghar", "Maximum ₹30,000"],
+      "url": "https://pmsuryaghar.gov.in",
+      "source": "Delhi solar policy (verify)"
+    }
+  ],
+  "transitionNote": "PM-KUSUM version 1.0 closed on 31 Dec 2025; version 2.0 is awaited. Estimates use v1.0 rules for reference only.",
+  "openQuestions": [
+    "Higher central support for north-eastern, hill and island states is not confirmed for the current schemes. No higher figure is shown until it is verified."
+  ]
+}

@@ -1,0 +1,312 @@
+[
+ {
+  "id": "what-is",
+  "cat": "options",
+  "q": {
+   "en": "What does India Energy Planner do?",
+   "hi": "इंडिया एनर्जी प्लानर क्या करता है?",
+   "ta": "இந்தியா எனர்ஜி பிளானர் என்ன செய்கிறது?",
+   "bn": "ইন্ডিয়া এনার্জি প্ল্যানার কী করে?"
+  },
+  "a": "It helps you pick a district, describe local demand and get an auto-designed solar, wind, small hydro, battery and diesel system, priced over 20 years, with a month-by-month rollout plan and matching subsidies."
+ },
+ {
+  "id": "which-option",
+  "cat": "options",
+  "q": {
+   "en": "Which option should my village choose?",
+   "hi": "मेरे गाँव को कौन-सा विकल्प चुनना चाहिए?",
+   "ta": "என் கிராமம் எந்த விருப்பத்தைத் தேர்வு செய்ய வேண்டும்?",
+   "bn": "আমার গ্রামের কোন বিকল্প বেছে নেওয়া উচিত?"
+  },
+  "a": "Start with the Recommended option on the Costs page. It is the cheapest design over 20 years (NPV) that still meets at least 99% of demand in the worst month. Change the sliders to see how storms, diesel price or battery cost change the answer.",
+  "tags": "best recommend choose option"
+ },
+ {
+  "id": "solar-only",
+  "cat": "options",
+  "q": {
+   "en": "Why isn't solar plus battery always the cheapest?",
+   "hi": "सोलर और बैटरी हमेशा सबसे सस्ता क्यों नहीं होता?",
+   "ta": "சோலார் மற்றும் பேட்டரி ஏன் எப்போதும் மலிவானதாக இல்லை?",
+   "bn": "সোলার আর ব্যাটারি কেন সবসময় সবচেয়ে সস্তা হয় না?"
+  },
+  "a": "To ride through cloudy monsoon days with solar alone you must oversize panels and batteries. A small diesel backup, wind or small hydro can cover those few days for less. When batteries get cheaper or diesel dearer, solar plus battery often wins."
+ },
+ {
+  "id": "hydro",
+  "cat": "options",
+  "q": {
+   "en": "When is small hydro offered?",
+   "hi": "लघु जलविद्युत कब दिया जाता है?",
+   "ta": "சிறு நீர்மின் எப்போது வழங்கப்படுகிறது?",
+   "bn": "ক্ষুদ্র জলবিদ্যুৎ কখন দেওয়া হয়?"
+  },
+  "a": "Only where the district's small hydro potential is medium or high, mostly hill and north-eastern districts. Output drops in dry months; the hydro flow slider lets you test a bad dry season."
+ },
+ {
+  "id": "wind",
+  "cat": "options",
+  "q": {
+   "en": "When is wind offered?",
+   "hi": "पवन ऊर्जा कब दी जाती है?",
+   "ta": "காற்றாலை எப்போது வழங்கப்படுகிறது?",
+   "bn": "বায়ু শক্তি কখন দেওয়া হয়?"
+  },
+  "a": "Only where a small 20 m turbine would reach at least a 9% capacity factor, such as Tirunelveli, Tumakuru, Kutch, Jaisalmer and some coastal districts. Wind often helps in the monsoon, when solar is weakest."
+ },
+ {
+  "id": "geothermal",
+  "cat": "options",
+  "q": {
+   "en": "Why is geothermal never in a design?",
+   "hi": "भूतापीय ऊर्जा डिज़ाइन में क्यों नहीं होती?",
+   "ta": "புவிவெப்ப ஆற்றல் ஏன் வடிவமைப்பில் இல்லை?",
+   "bn": "ভূতাপীয় শক্তি কেন নকশায় থাকে না?"
+  },
+  "a": "Geothermal is pilot-stage only in India (for example Puga in Ladakh and Manikaran in Himachal). We show it as potential on the map but never size it."
+ },
+ {
+  "id": "biomass",
+  "cat": "options",
+  "q": {
+   "en": "Is biomass included?",
+   "hi": "क्या बायोमास शामिल है?",
+   "ta": "உயிரி எரிபொருள் சேர்க்கப்பட்டுள்ளதா?",
+   "bn": "বায়োমাস কি অন্তর্ভুক্ত?"
+  },
+  "a": "Biomass potential is shown on the map and in district profiles, with the CERC benchmark tariff of ₹9.5–11.6/kWh for reference. It is not yet sized in designs because fuel supply is very local."
+ },
+ {
+  "id": "cost-solar",
+  "cat": "costs",
+  "q": {
+   "en": "How much does solar cost?",
+   "hi": "सोलर की लागत कितनी है?",
+   "ta": "சோலார் விலை எவ்வளவு?",
+   "bn": "সোলারের খরচ কত?"
+  },
+  "a": "The default is ₹55,000 per kW installed (range ₹50,000–67,000). A 3 kW home system costs about ₹1.5–2 lakh. Every cost is a slider or an editable value in costs.json.",
+  "tags": "price rate panel kw expensive"
+ },
+ {
+  "id": "cost-battery",
+  "cat": "costs",
+  "q": {
+   "en": "LFP or lead-acid battery?",
+   "hi": "एलएफपी या लेड-एसिड बैटरी?",
+   "ta": "எல்எஃப்பி அல்லது லெட்-ஆசிட் பேட்டரி?",
+   "bn": "এলএফপি না লেড-অ্যাসিড ব্যাটারি?"
+  },
+  "a": "LFP costs about ₹27,000/kWh but lasts 4,000+ cycles at 80% depth of discharge and is replaced once at year 11. Lead-acid is about ₹11,000/kWh but only uses 50% of its capacity and is replaced every 4 years. Over 20 years LFP is usually cheaper.",
+  "tags": "battery storage lfp lead acid"
+ },
+ {
+  "id": "cost-diesel",
+  "cat": "costs",
+  "q": {
+   "en": "How is diesel cost counted?",
+   "hi": "डीज़ल की लागत कैसे गिनी जाती है?",
+   "ta": "டீசல் செலவு எப்படி கணக்கிடப்படுகிறது?",
+   "bn": "ডিজেলের খরচ কীভাবে গোনা হয়?"
+  },
+  "a": "Litres = diesel kWh ÷ 3.4 kWh per litre, at the diesel price slider (default ₹90/litre), rising 4% a year, plus ₹2/kWh generator O&M. All-in diesel power is about ₹28–35/kWh.",
+  "tags": "diesel fuel generator litre"
+ },
+ {
+  "id": "lcoe",
+  "cat": "results",
+  "q": {
+   "en": "What does ₹/kWh (levelised cost) mean?",
+   "hi": "₹/kWh (समतलीकृत लागत) का क्या अर्थ है?",
+   "ta": "₹/kWh (சமன்படுத்தப்பட்ட செலவு) என்றால் என்ன?",
+   "bn": "₹/kWh (সমতলীকৃত খরচ) মানে কী?"
+  },
+  "a": "It is the 20-year cost (discounted) divided by the energy delivered (discounted). It lets you compare options and the grid tariff on a per-unit basis.",
+  "tags": "per unit kwh rate"
+ },
+ {
+  "id": "npv",
+  "cat": "results",
+  "q": {
+   "en": "What is NPV and why is it lower than the 20-year total?",
+   "hi": "एनपीवी क्या है और यह 20 साल के कुल से कम क्यों है?",
+   "ta": "என்பிவி என்றால் என்ன, அது ஏன் 20 ஆண்டு மொத்தத்தை விடக் குறைவு?",
+   "bn": "এনপিভি কী এবং এটি ২০ বছরের মোটের চেয়ে কম কেন?"
+  },
+  "a": "Net present value discounts future costs at 9.08% a year (9.38% for small hydro, per CERC), because money spent later is worth less today. The nominal total simply adds every year's rupees."
+ },
+ {
+  "id": "payback",
+  "cat": "results",
+  "q": {
+   "en": "How is payback worked out?",
+   "hi": "पेबैक कैसे निकाला जाता है?",
+   "ta": "திருப்பிச் செலுத்தும் காலம் எப்படி கணக்கிடப்படுகிறது?",
+   "bn": "পেব্যাক কীভাবে বের করা হয়?"
+  },
+  "a": "It is the first year in which the option's cumulative cost falls below the cumulative cost of a diesel-only village (or of buying grid power at the tariff slider).",
+  "tags": "payback years recover"
+ },
+ {
+  "id": "reliability",
+  "cat": "results",
+  "q": {
+   "en": "What does worst-month reliability mean?",
+   "hi": "सबसे खराब महीने की विश्वसनीयता का क्या अर्थ है?",
+   "ta": "மோசமான மாத நம்பகத்தன்மை என்றால் என்ன?",
+   "bn": "সবচেয়ে খারাপ মাসের নির্ভরযোগ্যতা মানে কী?"
+  },
+  "a": "The share of demand met in the hardest month of the year, including one low-sun spell. Designs aim for at least 99%. It is an estimate from monthly averages, not a guarantee."
+ },
+ {
+  "id": "storm",
+  "cat": "results",
+  "q": {
+   "en": "What does the storm slider do?",
+   "hi": "तूफ़ान स्लाइडर क्या करता है?",
+   "ta": "புயல் ஸ்லைடர் என்ன செய்கிறது?",
+   "bn": "ঝড় স্লাইডার কী করে?"
+  },
+  "a": "It adds a spell of 1–5 low-sun days (solar at 35%) to the worst month and raises battery autonomy from 1 to 2 days. Longer spells push designs towards hydro, wind or diesel backup.",
+  "tags": "storm cloudy monsoon rain"
+ },
+ {
+  "id": "rollout",
+  "cat": "results",
+  "q": {
+   "en": "Why are the clinic and school built first?",
+   "hi": "क्लिनिक और स्कूल पहले क्यों बनाए जाते हैं?",
+   "ta": "மருத்துவமனையும் பள்ளியும் ஏன் முதலில் கட்டப்படுகின்றன?",
+   "bn": "ক্লিনিক ও স্কুল কেন আগে তৈরি হয়?"
+  },
+  "a": "Critical loads (clinic, school, water pumps) give the most benefit per rupee and protect health and water supply, so the rollout powers them first and then connects homes in batches."
+ },
+ {
+  "id": "impact",
+  "cat": "results",
+  "q": {
+   "en": "How is the impact score calculated?",
+   "hi": "प्रभाव स्कोर कैसे निकाला जाता है?",
+   "ta": "தாக்க மதிப்பெண் எப்படி கணக்கிடப்படுகிறது?",
+   "bn": "প্রভাব স্কোর কীভাবে হিসাব করা হয়?"
+  },
+  "a": "CO₂ avoided (30%), diesel saved (25%), homes served per ₹ crore (25%) and cost-efficiency (20%), each scaled 0–1 across all 50 districts using the same default village, then combined into 0–100."
+ },
+ {
+  "id": "pmsg",
+  "cat": "subsidies",
+  "q": {
+   "en": "How much subsidy does PM Surya Ghar give?",
+   "hi": "पीएम सूर्य घर कितनी सब्सिडी देता है?",
+   "ta": "பிஎம் சூர்யா கர் எவ்வளவு மானியம் தருகிறது?",
+   "bn": "পিএম সূর্য ঘর কত ভর্তুকি দেয়?"
+  },
+  "a": "₹30,000 per kW up to 2 kW, ₹18,000 for the 3rd kW, up to ₹78,000 for 3 kW and above, for grid-connected rooftop systems only. Apply at pmsuryaghar.gov.in and verify on the official site before applying.",
+  "tags": "subsidy amount money kw home house rooftop solar scheme get"
+ },
+ {
+  "id": "pmsg-offgrid",
+  "cat": "subsidies",
+  "q": {
+   "en": "Can an off-grid home system get PM Surya Ghar?",
+   "hi": "क्या ऑफ-ग्रिड घर को पीएम सूर्य घर मिल सकता है?",
+   "ta": "கிரிட் இணைப்பில்லாத வீட்டுக்கு பிஎம் சூர்யா கர் கிடைக்குமா?",
+   "bn": "অফ-গ্রিড বাড়ি কি পিএম সূর্য ঘর পেতে পারে?"
+  },
+  "a": "No. The scheme covers grid-connected rooftop systems only. Verify on the official site before applying.",
+  "tags": "offgrid off-grid eligible"
+ },
+ {
+  "id": "kusum",
+  "cat": "subsidies",
+  "q": {
+   "en": "Is PM-KUSUM open now?",
+   "hi": "क्या पीएम-कुसुम अभी खुला है?",
+   "ta": "பிஎம்-குசும் இப்போது திறந்திருக்கிறதா?",
+   "bn": "পিএম-কুসুম কি এখন খোলা?"
+  },
+  "a": "PM-KUSUM version 1.0 closed on 31 Dec 2025 and version 2.0 is awaited, so we show it as In transition with v1.0 rules for reference. Check your state nodal agency and verify on the official site.",
+  "tags": "pump farmer agriculture kusum"
+ },
+ {
+  "id": "ne-subsidy",
+  "cat": "subsidies",
+  "q": {
+   "en": "Do hill, north-east and island states get more?",
+   "hi": "क्या पहाड़ी, पूर्वोत्तर और द्वीप राज्यों को अधिक मिलता है?",
+   "ta": "மலை, வடகிழக்கு மற்றும் தீவு மாநிலங்களுக்கு அதிகம் கிடைக்குமா?",
+   "bn": "পাহাড়ি, উত্তর-পূর্ব ও দ্বীপ রাজ্য কি বেশি পায়?"
+  },
+  "a": "Higher support for these states is not confirmed for the current schemes, so we do not show a higher figure until it is verified on an official site.",
+  "tags": "northeast hill island extra more subsidy"
+ },
+ {
+  "id": "data-illustrative",
+  "cat": "data",
+  "q": {
+   "en": "Why does it say Illustrative?",
+   "hi": "इसमें 'उदाहरणात्मक' क्यों लिखा है?",
+   "ta": "ஏன் 'விளக்க நோக்கம்' என்று உள்ளது?",
+   "bn": "কেন 'দৃষ্টান্তমূলক' লেখা আছে?"
+  },
+  "a": "District solar and wind values come from published tiers (MNRE Solar Atlas + Solargis averages), not measured data for that district. Importing NASA POWER climatology replaces them with real values."
+ },
+ {
+  "id": "data-update",
+  "cat": "data",
+  "q": {
+   "en": "How do I update costs or add a district?",
+   "hi": "मैं लागत कैसे बदलूँ या ज़िला कैसे जोड़ूँ?",
+   "ta": "செலவுகளை மாற்ற அல்லது மாவட்டத்தைச் சேர்க்க எப்படி?",
+   "bn": "খরচ বদলাব বা জেলা যোগ করব কীভাবে?"
+  },
+  "a": "Edit costs.json, or add one object to districts.json, in the app's data folder. No code changes are needed; see the README."
+ },
+ {
+  "id": "data-map",
+  "cat": "data",
+  "q": {
+   "en": "Which map boundary is used?",
+   "hi": "कौन-सी मानचित्र सीमा उपयोग होती है?",
+   "ta": "எந்த வரைபட எல்லை பயன்படுத்தப்படுகிறது?",
+   "bn": "কোন মানচিত্র সীমানা ব্যবহার করা হয়?"
+  },
+  "a": "The official outline of India as per the Survey of India, including all of Jammu & Kashmir and Ladakh, from DataMeet's state boundaries. It is flagged for verification before publishing."
+ },
+ {
+  "id": "complaint",
+  "cat": "help",
+  "q": {
+   "en": "Will logging a complaint here fix my power cut?",
+   "hi": "क्या यहाँ शिकायत दर्ज करने से मेरी बिजली कटौती ठीक होगी?",
+   "ta": "இங்கே புகார் பதிவு செய்தால் மின்வெட்டு சரியாகுமா?",
+   "bn": "এখানে অভিযোগ করলে কি আমার বিদ্যুৎ বিভ্রাট ঠিক হবে?"
+  },
+  "a": "This app routes and tracks your complaint with a ticket ID. Repairs are done by your DISCOM, so also call 1912 or your DISCOM. For danger, call 112 or 1912.",
+  "tags": "power cut outage repair complaint"
+ },
+ {
+  "id": "offline",
+  "cat": "help",
+  "q": {
+   "en": "Does it work without internet?",
+   "hi": "क्या यह बिना इंटरनेट के चलता है?",
+   "ta": "இணையம் இல்லாமல் இது இயங்குமா?",
+   "bn": "এটা কি ইন্টারনেট ছাড়া চলে?"
+  },
+  "a": "Yes, after you open it once online. All district, cost, subsidy, helpline and FAQ data is stored on your device. Complaints made offline are queued and sent when you are back online. Only the AI assistant needs internet.",
+  "tags": "internet offline network"
+ },
+ {
+  "id": "ai",
+  "cat": "help",
+  "q": {
+   "en": "Where does the AI assistant get its answers?",
+   "hi": "एआई सहायक अपने उत्तर कहाँ से लाता है?",
+   "ta": "AI உதவியாளர் பதில்களை எங்கிருந்து பெறுகிறது?",
+   "bn": "এআই সহকারী উত্তর কোথা থেকে পায়?"
+  },
+  "a": "Only from the context you are looking at: the selected district, your current design, costs, subsidies and this FAQ. If it is unavailable, the app falls back to searching this FAQ."
+ }
+]

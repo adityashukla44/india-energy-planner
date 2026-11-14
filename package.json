@@ -1,0 +1,29 @@
+{
+  "name": "india-energy-planner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "India Energy Planner: district energy planning for FlairQuest 2.0 Ideathon, Track 8",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c cyan,yellow \"npm:dev -w server\" \"npm:dev -w client\"",
+    "build": "npm run build -w client && npm run build -w server",
+    "start": "npm run start -w server",
+    "test": "npm run test -w client",
+    "seed": "npm run seed -w server",
+    "import:nasa": "tsx scripts/import-nasa-power.ts",
+    "data:districts": "node scripts/build-districts.mjs",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1",
+    "concurrently": "9.1.0",
+    "mapshaper": "0.6.99",
+    "tsx": "4.19.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

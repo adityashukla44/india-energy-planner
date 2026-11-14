@@ -1,0 +1,380 @@
+[
+  {
+    "type": "outage",
+    "state": "Jharkhand",
+    "district": "ranchi",
+    "details": "No power in the lane since the morning.",
+    "status": "acknowledged",
+    "createdAt": "2026-10-06T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "sparking",
+    "state": "Rajasthan",
+    "district": "barmer",
+    "details": "Sparks seen at the pole transformer near the school.",
+    "status": "acknowledged",
+    "createdAt": "2026-10-16T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Rajasthan",
+    "district": "jaisalmer",
+    "details": "No power in the lane since the morning.",
+    "status": "logged",
+    "createdAt": "2026-10-20T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "billing",
+    "state": "Bihar",
+    "district": "patna",
+    "details": "Bill is much higher than usual this month.",
+    "status": "acknowledged",
+    "createdAt": "2026-08-23T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "fluctuation",
+    "state": "Maharashtra",
+    "district": "gadchiroli",
+    "details": "Lights flicker and voltage keeps changing.",
+    "status": "resolved",
+    "createdAt": "2026-10-17T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "streetlight",
+    "state": "Chhattisgarh",
+    "district": "bastar",
+    "details": "Streetlights on the main road are not working.",
+    "status": "routed",
+    "createdAt": "2026-08-10T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "billing",
+    "state": "Odisha",
+    "district": "kalahandi",
+    "details": "Bill is much higher than usual this month.",
+    "status": "resolved",
+    "createdAt": "2026-10-16T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "low_voltage",
+    "state": "Odisha",
+    "district": "kalahandi",
+    "details": "Fans and pumps run slowly in the evening.",
+    "status": "logged",
+    "createdAt": "2026-09-15T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Jammu & Kashmir",
+    "district": "srinagar",
+    "details": "No power in the lane since the morning.",
+    "status": "resolved",
+    "createdAt": "2026-09-10T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "West Bengal",
+    "district": "south-24-parganas",
+    "details": "No power in the lane since the morning.",
+    "status": "routed",
+    "createdAt": "2026-09-08T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "low_voltage",
+    "state": "Uttar Pradesh",
+    "district": "lucknow",
+    "details": "Fans and pumps run slowly in the evening.",
+    "status": "routed",
+    "createdAt": "2026-10-07T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "fluctuation",
+    "state": "West Bengal",
+    "district": "kolkata",
+    "details": "Lights flicker and voltage keeps changing.",
+    "status": "acknowledged",
+    "createdAt": "2026-09-15T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "fluctuation",
+    "state": "Tamil Nadu",
+    "district": "tirunelveli",
+    "details": "Lights flicker and voltage keeps changing.",
+    "status": "routed",
+    "createdAt": "2026-09-08T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "sparking",
+    "state": "Chhattisgarh",
+    "district": "bastar",
+    "details": "Sparks seen at the pole transformer near the school.",
+    "status": "resolved",
+    "createdAt": "2026-08-25T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Chhattisgarh",
+    "district": "bastar",
+    "details": "No power in the lane since the morning.",
+    "status": "logged",
+    "createdAt": "2026-10-03T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "low_voltage",
+    "state": "West Bengal",
+    "district": "south-24-parganas",
+    "details": "Fans and pumps run slowly in the evening.",
+    "status": "resolved",
+    "createdAt": "2026-08-17T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "streetlight",
+    "state": "Uttar Pradesh",
+    "district": "varanasi",
+    "details": "Streetlights on the main road are not working.",
+    "status": "routed",
+    "createdAt": "2026-10-26T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Maharashtra",
+    "district": "gadchiroli",
+    "details": "No power in the lane since the morning.",
+    "status": "logged",
+    "createdAt": "2026-09-01T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "fluctuation",
+    "state": "Maharashtra",
+    "district": "mumbai",
+    "details": "Lights flicker and voltage keeps changing.",
+    "status": "logged",
+    "createdAt": "2026-10-07T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Uttar Pradesh",
+    "district": "varanasi",
+    "details": "No power in the lane since the morning.",
+    "status": "resolved",
+    "createdAt": "2026-08-14T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Jharkhand",
+    "district": "ranchi",
+    "details": "No power in the lane since the morning.",
+    "status": "resolved",
+    "createdAt": "2026-08-26T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Jammu & Kashmir",
+    "district": "srinagar",
+    "details": "No power in the lane since the morning.",
+    "status": "acknowledged",
+    "createdAt": "2026-08-07T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "fluctuation",
+    "state": "Rajasthan",
+    "district": "barmer",
+    "details": "Lights flicker and voltage keeps changing.",
+    "status": "logged",
+    "createdAt": "2026-09-20T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Jharkhand",
+    "district": "ranchi",
+    "details": "No power in the lane since the morning.",
+    "status": "logged",
+    "createdAt": "2026-10-20T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "other",
+    "state": "Uttar Pradesh",
+    "district": "lucknow",
+    "details": "Meter reading not taken for two months.",
+    "status": "routed",
+    "createdAt": "2026-10-27T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "streetlight",
+    "state": "Jammu & Kashmir",
+    "district": "srinagar",
+    "details": "Streetlights on the main road are not working.",
+    "status": "routed",
+    "createdAt": "2026-08-12T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Meghalaya",
+    "district": "east-khasi-hills",
+    "details": "No power in the lane since the morning.",
+    "status": "routed",
+    "createdAt": "2026-10-18T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Gujarat",
+    "district": "surat",
+    "details": "No power in the lane since the morning.",
+    "status": "resolved",
+    "createdAt": "2026-10-09T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "billing",
+    "state": "Uttar Pradesh",
+    "district": "varanasi",
+    "details": "Bill is much higher than usual this month.",
+    "status": "logged",
+    "createdAt": "2026-09-06T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "sparking",
+    "state": "Uttar Pradesh",
+    "district": "lucknow",
+    "details": "Sparks seen at the pole transformer near the school.",
+    "status": "logged",
+    "createdAt": "2026-09-27T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "fluctuation",
+    "state": "West Bengal",
+    "district": "south-24-parganas",
+    "details": "Lights flicker and voltage keeps changing.",
+    "status": "acknowledged",
+    "createdAt": "2026-09-15T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "sparking",
+    "state": "Madhya Pradesh",
+    "district": "rewa",
+    "details": "Sparks seen at the pole transformer near the school.",
+    "status": "acknowledged",
+    "createdAt": "2026-08-01T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Jammu & Kashmir",
+    "district": "srinagar",
+    "details": "No power in the lane since the morning.",
+    "status": "routed",
+    "createdAt": "2026-09-07T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "streetlight",
+    "state": "Rajasthan",
+    "district": "barmer",
+    "details": "Streetlights on the main road are not working.",
+    "status": "acknowledged",
+    "createdAt": "2026-10-26T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "sparking",
+    "state": "Ladakh",
+    "district": "kargil",
+    "details": "Sparks seen at the pole transformer near the school.",
+    "status": "resolved",
+    "createdAt": "2026-10-17T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "West Bengal",
+    "district": "south-24-parganas",
+    "details": "No power in the lane since the morning.",
+    "status": "logged",
+    "createdAt": "2026-08-04T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Jharkhand",
+    "district": "ranchi",
+    "details": "No power in the lane since the morning.",
+    "status": "acknowledged",
+    "createdAt": "2026-08-04T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "other",
+    "state": "Bihar",
+    "district": "patna",
+    "details": "Meter reading not taken for two months.",
+    "status": "resolved",
+    "createdAt": "2026-10-12T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Chhattisgarh",
+    "district": "bastar",
+    "details": "No power in the lane since the morning.",
+    "status": "resolved",
+    "createdAt": "2026-10-07T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "low_voltage",
+    "state": "Jharkhand",
+    "district": "ranchi",
+    "details": "Fans and pumps run slowly in the evening.",
+    "status": "acknowledged",
+    "createdAt": "2026-08-04T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Bihar",
+    "district": "supaul",
+    "details": "No power in the lane since the morning.",
+    "status": "routed",
+    "createdAt": "2026-09-19T10:00:00.000Z",
+    "sample": true
+  },
+  {
+    "type": "outage",
+    "state": "Himachal Pradesh",
+    "district": "lahaul-and-spiti",
+    "details": "No power in the lane since the morning.",
+    "status": "logged",
+    "createdAt": "2026-08-09T10:00:00.000Z",
+    "sample": true
+  }
+]

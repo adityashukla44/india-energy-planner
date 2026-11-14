@@ -1,0 +1,702 @@
+{
+  "version": "2026-11",
+  "verify_note": "Only numbers listed here are confirmed. \"To verify\" means check the DISCOM's official website; we do not invent numbers.",
+  "national": [
+    {
+      "id": "power",
+      "label": "Electricity complaints (Ministry of Power call centre)",
+      "number": "1912",
+      "note": "Rollout varies by state",
+      "url": "https://powermin.gov.in/en/content/electricity-call-center"
+    },
+    {
+      "id": "emergency",
+      "label": "All emergencies",
+      "number": "112"
+    },
+    {
+      "id": "fire",
+      "label": "Fire",
+      "number": "101"
+    },
+    {
+      "id": "ambulance",
+      "label": "Ambulance",
+      "number": "102 / 108"
+    }
+  ],
+  "states": [
+    {
+      "state": "Andaman & Nicobar Islands",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Andhra Pradesh",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "APSPDCL",
+          "discom_number": "To verify",
+          "url": "https://www.apspdcl.in"
+        },
+        {
+          "name": "APEPDCL",
+          "discom_number": "To verify",
+          "url": "https://www.apeasternpower.com"
+        },
+        {
+          "name": "APCPDCL",
+          "discom_number": "To verify",
+          "url": "https://www.apcpdcl.in"
+        }
+      ]
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Assam",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "APDCL",
+          "discom_number": "To verify",
+          "url": "https://www.apdcl.org"
+        }
+      ]
+    },
+    {
+      "state": "Bihar",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "NBPDCL",
+          "discom_number": "To verify",
+          "url": "https://www.nbpdcl.co.in"
+        },
+        {
+          "name": "SBPDCL",
+          "discom_number": "To verify",
+          "url": "https://www.sbpdcl.co.in"
+        }
+      ]
+    },
+    {
+      "state": "Chandigarh",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Chhattisgarh",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "CSPDCL",
+          "discom_number": "To verify",
+          "url": "https://www.cspdcl.co.in"
+        }
+      ]
+    },
+    {
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Delhi",
+      "helplines": [
+        {
+          "label": "BSES Rajdhani (South & West Delhi)",
+          "number": "19123"
+        },
+        {
+          "label": "BSES Yamuna (East & Central Delhi)",
+          "number": "19122"
+        },
+        {
+          "label": "Tata Power-DDL (North Delhi)",
+          "number": "19124",
+          "url": "https://www.tatapower-ddl.com"
+        },
+        {
+          "label": "Delhi power grievance helpline",
+          "number": "1800-11-2222"
+        },
+        {
+          "label": "Delhi Jal Board (water)",
+          "number": "1916"
+        }
+      ],
+      "discoms": []
+    },
+    {
+      "state": "Goa",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Gujarat",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "DGVCL",
+          "discom_number": "To verify",
+          "url": "https://www.dgvcl.com"
+        },
+        {
+          "name": "MGVCL",
+          "discom_number": "To verify",
+          "url": "https://www.mgvcl.com"
+        },
+        {
+          "name": "PGVCL",
+          "discom_number": "To verify",
+          "url": "https://www.pgvcl.com"
+        },
+        {
+          "name": "UGVCL",
+          "discom_number": "To verify",
+          "url": "https://www.ugvcl.com"
+        }
+      ]
+    },
+    {
+      "state": "Haryana",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "UHBVN",
+          "discom_number": "To verify",
+          "url": "https://www.uhbvn.org.in"
+        },
+        {
+          "name": "DHBVN",
+          "discom_number": "To verify",
+          "url": "https://www.dhbvn.org.in"
+        }
+      ]
+    },
+    {
+      "state": "Himachal Pradesh",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "HPSEBL",
+          "discom_number": "To verify",
+          "url": "https://www.hpseb.in"
+        }
+      ]
+    },
+    {
+      "state": "Jammu & Kashmir",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Jharkhand",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "JBVNL",
+          "discom_number": "To verify",
+          "url": "https://www.jbvnl.co.in"
+        }
+      ]
+    },
+    {
+      "state": "Karnataka",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Kerala",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "KSEB",
+          "discom_number": "To verify",
+          "url": "https://www.kseb.in"
+        }
+      ]
+    },
+    {
+      "state": "Ladakh",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Lakshadweep",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Madhya Pradesh",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "MP Paschim Kshetra VVCL",
+          "discom_number": "To verify",
+          "url": "https://www.mpwz.co.in"
+        },
+        {
+          "name": "MP Madhya Kshetra VVCL",
+          "discom_number": "To verify",
+          "url": "https://portal.mpcz.in"
+        },
+        {
+          "name": "MP Poorv Kshetra VVCL",
+          "discom_number": "To verify",
+          "url": "https://www.mpez.co.in"
+        }
+      ]
+    },
+    {
+      "state": "Maharashtra",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "MSEDCL (Mahavitaran)",
+          "discom_number": "To verify",
+          "url": "https://www.mahadiscom.in"
+        },
+        {
+          "name": "BEST (Mumbai)",
+          "discom_number": "To verify",
+          "url": "https://www.bestundertaking.com"
+        },
+        {
+          "name": "Adani Electricity (Mumbai)",
+          "discom_number": "To verify",
+          "url": "https://www.adanielectricity.com"
+        },
+        {
+          "name": "Tata Power (Mumbai)",
+          "discom_number": "To verify",
+          "url": "https://www.tatapower.com"
+        }
+      ]
+    },
+    {
+      "state": "Manipur",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "MSPDCL",
+          "discom_number": "To verify",
+          "url": "https://www.mspdcl.com"
+        }
+      ]
+    },
+    {
+      "state": "Meghalaya",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Mizoram",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Nagaland",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Odisha",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "TP Central Odisha (TPCODL)",
+          "discom_number": "To verify",
+          "url": "https://www.tpcentralodisha.com"
+        },
+        {
+          "name": "TP Southern Odisha (TPSODL)",
+          "discom_number": "To verify",
+          "url": "https://www.tpsouthernodisha.com"
+        },
+        {
+          "name": "TP Western Odisha (TPWODL)",
+          "discom_number": "To verify",
+          "url": "https://www.tpwesternodisha.com"
+        },
+        {
+          "name": "TP Northern Odisha (TPNODL)",
+          "discom_number": "To verify",
+          "url": "https://www.tpnorthernodisha.com"
+        }
+      ]
+    },
+    {
+      "state": "Puducherry",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Punjab",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "PSPCL",
+          "discom_number": "To verify",
+          "url": "https://www.pspcl.in"
+        }
+      ]
+    },
+    {
+      "state": "Rajasthan",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "Jaipur, Ajmer and Jodhpur DISCOMs",
+          "discom_number": "To verify",
+          "url": "https://energy.rajasthan.gov.in"
+        }
+      ]
+    },
+    {
+      "state": "Sikkim",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Tamil Nadu",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "State power department / DISCOM",
+          "discom_number": "To verify",
+          "url": null
+        }
+      ]
+    },
+    {
+      "state": "Telangana",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "TGSPDCL / TSSPDCL",
+          "discom_number": "To verify",
+          "url": "https://www.tssouthernpower.com"
+        },
+        {
+          "name": "TGNPDCL / TSNPDCL",
+          "discom_number": "To verify",
+          "url": "https://tsnpdcl.in"
+        }
+      ]
+    },
+    {
+      "state": "Tripura",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "TSECL",
+          "discom_number": "To verify",
+          "url": "https://www.tsecl.in"
+        }
+      ]
+    },
+    {
+      "state": "Uttar Pradesh",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "UPPCL and its DISCOMs",
+          "discom_number": "To verify",
+          "url": "https://www.uppcl.org"
+        }
+      ]
+    },
+    {
+      "state": "Uttarakhand",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "UPCL",
+          "discom_number": "To verify",
+          "url": "https://www.upcl.org"
+        }
+      ]
+    },
+    {
+      "state": "West Bengal",
+      "helplines": [
+        {
+          "label": "Electricity complaints",
+          "number": "1912"
+        }
+      ],
+      "discoms": [
+        {
+          "name": "WBSEDCL",
+          "discom_number": "To verify",
+          "url": "https://www.wbsedcl.in"
+        },
+        {
+          "name": "CESC (Kolkata)",
+          "discom_number": "To verify",
+          "url": "https://www.cesc.co.in"
+        }
+      ]
+    }
+  ]
+}
