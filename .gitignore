@@ -8,3 +8,6 @@ test-results
 playwright-report
 data-raw/*.csv
 server/e2e.sqlite*
+
+# Local tooling
+.claude/

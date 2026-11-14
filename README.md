@@ -1,31 +1,107 @@
-# India Energy Planner
+<div align="center">
 
-FlairQuest 2.0 Ideathon, Track 8: Energy & Resource Management.
+# ⚡ India Energy Planner
+
+**Plan clean, reliable power for any Indian district: from a 3D map to a priced, month-by-month rollout.**
+
+FlairQuest 2.0 Ideathon · Track 8: Energy & Resource Management
+
+[![CI](https://github.com/adityashukla44/india-energy-planner/actions/workflows/ci.yml/badge.svg)](https://github.com/adityashukla44/india-energy-planner/actions/workflows/ci.yml)
+![Node](https://img.shields.io/badge/node-%E2%89%A522-5FA04E?logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![three.js](https://img.shields.io/badge/three.js-r170-000000?logo=three.js&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-offline%20ready-7C3AED)
+
+<img src="docs/screenshots/hero.jpg" alt="India Energy Planner home page" width="100%">
+
+</div>
+
+---
+
+## Overview
 
 Pick an Indian district on a 3D map, see its energy profile, describe local demand (homes, a clinic, a school, water pumps, streetlights), and get an auto-designed solar / wind / small-hydro / battery / diesel system. The app prices it over 20 years and plans a month-by-month rollout.
 
 It also finds matching subsidies, ranks all 50 districts by impact, answers questions through an AI assistant, and lets people log and track power complaints (with a 3D outage heatmap). It works in English, Hindi, Tamil and Bengali, and offline after the first visit.
 
-Pages: Home · Map · Planner · Costs · Rollout · Impact · Subsidies · Help · Complaints · Heatmap · Data & Assumptions.
+## Features
 
-## Setup
+| | |
+|---|---|
+| 🗺️ **3D India map** | Survey of India based boundary (incl. all of J&K and Ladakh), district columns by best resource, impact, solar, wind or demand |
+| 🔆 **System planner** | Builds demand from loads, then sizes PV, battery, wind, small hydro and diesel backup to hit ≥ 99% worst-month reliability |
+| 💰 **20-year costs** | Capex, NPV, LCOE and payback vs diesel and grid, with every assumption adjustable |
+| 📅 **Rollout plan** | Month-by-month timeline from survey to commissioning |
+| 🌱 **Impact ranking** | All 50 districts ranked by impact score, CO₂ and diesel avoided |
+| 🏛️ **Subsidies** | Matches central and state schemes to the chosen design |
+| 💬 **AI assistant** | Claude-powered help that knows the current plan; falls back to FAQ search offline |
+| 📣 **Complaints + heatmap** | Log and track power complaints, queued offline, shown on a 3D outage heatmap |
+| 🌐 **4 languages** | English, हिन्दी, தமிழ், বাংলা with Indian number format (lakh, crore) |
+| 📶 **Works offline** | Installable PWA; all pages and data cached after the first visit |
 
-Requirements: Node 22 or newer (tested on Node 26).
+## Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/scroll-map.jpg" alt="Scroll-driven India map on the home page"><br><sub><b>Home</b> · scroll-driven India map</sub></td>
+    <td width="50%"><img src="docs/screenshots/map.jpg" alt="3D district map"><br><sub><b>Map</b> · districts by best resource</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/planner.jpg" alt="Planner"><br><sub><b>Planner</b> · auto-sized system and 3D scene</sub></td>
+    <td><img src="docs/screenshots/costs.jpg" alt="Costs"><br><sub><b>Costs</b> · 20-year lifecycle</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/rollout.jpg" alt="Rollout"><br><sub><b>Rollout</b> · month-by-month plan</sub></td>
+    <td><img src="docs/screenshots/impact.jpg" alt="Impact"><br><sub><b>Impact</b> · district ranking</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/heatmap.jpg" alt="Complaints heatmap"><br><sub><b>Heatmap</b> · complaints by district</sub></td>
+    <td><img src="docs/screenshots/help.jpg" alt="Help and AI assistant"><br><sub><b>Help</b> · AI assistant and helplines</sub></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="docs/screenshots/planner-hindi.jpg" alt="Planner in Hindi"><br><sub><b>Multilingual</b> · the planner in Hindi</sub></td>
+  </tr>
+</table>
+
+## Tech stack
+
+| Layer | Tools |
+|---|---|
+| Web app | Vite 5, React 18, TypeScript, Tailwind CSS, Framer Motion, Zustand, i18next, Recharts |
+| 3D | three.js, @react-three/fiber, @react-three/drei, postprocessing |
+| Offline | vite-plugin-pwa (Workbox), IndexedDB queue |
+| Server | Express, TypeScript, better-sqlite3, zod, helmet, express-rate-limit |
+| AI | Anthropic SDK (`claude-opus-5-5`, streaming) |
+| Testing | Vitest (unit), Playwright (end-to-end) |
+
+## Getting started
+
+**Requirements:** Node 22 or newer (tested on Node 26).
 
 ```bash
+git clone https://github.com/adityashukla44/india-energy-planner.git
+cd india-energy-planner
 npm install
 cp .env.example .env
 npm run seed     # load the 42 sample complaints (marked "Sample") for the heatmap
 npm run dev      # API on :8787, web app on http://localhost:5173
-npm test         # unit tests (Vitest): engine, subsidies, FAQ search, chat streaming, translations
-npm run test:e2e # Playwright smoke test: every page, desktop + phone, offline mode
-npm run build    # production build (includes the service worker)
-npm start        # serves the built app + API on PORT (default 8787)
 ```
 
-First Playwright run only: `npx playwright install chromium`.
+### Scripts
 
-`.env` variables:
+| Command | What it does |
+|---|---|
+| `npm run dev` | API on :8787 and web app on http://localhost:5173 |
+| `npm test` | Unit tests (Vitest): engine, subsidies, FAQ search, chat streaming, translations |
+| `npm run test:e2e` | Playwright smoke test: every page, desktop + phone, offline mode (first run: `npx playwright install chromium`) |
+| `npm run build` | Production build (includes the service worker) |
+| `npm start` | Serves the built app + API on `PORT` (default 8787) |
+| `npm run seed` | Loads sample complaints into SQLite |
+| `npm run import:nasa` | Imports NASA POWER CSVs from `data-raw/` |
+| `npm run data:districts` | Regenerates illustrative district data |
+
+### Environment variables
 
 | Variable | What it does |
 |---|---|
@@ -33,83 +109,49 @@ First Playwright run only: `npx playwright install chromium`.
 | `ANTHROPIC_MODEL` | Optional. Defaults to `claude-opus-5-5`. |
 | `ADMIN_TOKEN` | Required to change a complaint's status (`PATCH /api/complaints/:id/status`). |
 | `PORT` | API / production server port (default 8787). |
+| `DB_PATH` | Optional. SQLite file location (use a persistent disk in production). |
 
-## Deploy (public website)
-
-The app is one Node service: `npm run build` builds the site and server, `npm start` serves both on `PORT`. On first start with an empty database it loads the sample complaints automatically.
-
-**Render (free tier):** push this folder to a GitHub repo, then in Render choose **New → Blueprint** and pick the repo. `render.yaml` sets everything up (Node 22, build and start commands, health check, a generated `ADMIN_TOKEN`). Add `ANTHROPIC_API_KEY` in the service's **Environment** tab to turn on the AI assistant.
-
-**Any Docker host (Railway, Fly.io, etc.):** the `Dockerfile` builds and runs the app on port 8787.
-
-Free hosting notes: the free Render service sleeps after about 15 minutes idle (the first visit then takes up to a minute), and its disk is temporary, so logged complaints reset on each redeploy. Attach a persistent disk and set `DB_PATH` to keep them.
-
-## API
-
-| Method | Path | Notes |
-|---|---|---|
-| GET | `/api/health` | Status, and whether AI is configured |
-| POST | `/api/complaints` | `{type, state, district, details, contact?, clientId?}` → `{ticketId, status}`. Validated with zod, rate-limited. `clientId` makes offline retries safe (no duplicates). |
-| GET | `/api/complaints?state=&district=&type=&ids=` | Public list. Contact details are never included. |
-| PATCH | `/api/complaints/:id/status` | `Authorization: Bearer <ADMIN_TOKEN>`, body `{status}`: `logged` → `routed` → `acknowledged` → `resolved` |
-| GET | `/api/complaints/heatmap` | Counts by district and type |
-| POST | `/api/chat` | Streams the assistant reply (server-sent events). On any failure returns `{code}` so the app falls back to FAQ search. |
-
-## Offline
-
-The app is a PWA. After one online visit, every page and all data (districts, costs, boundary, subsidies, helplines, FAQ, sample complaints) are cached by the service worker. Complaints made offline are stored in IndexedDB and sent automatically when the connection returns. Only the AI assistant needs the internet.
-
-## Structure
+## Project structure
 
 ```
-client/          Vite + React 18 + TypeScript + Tailwind
-  src/engine/    pure planning maths (resource, demand, sizing, costs, lifecycle, rollout, impact, plan) + tests
-  src/three/     react-three-fiber scenes (hero, 3D map, district diorama, system scene, procedural models)
-  src/pages/     one route per page
-  src/i18n/      en, hi, ta, bn strings
-  public/data/   all data as JSON: districts, costs, india-boundary, subsidies, helplines, faq, sample-complaints
-server/          Express + TypeScript (helmet, cors, rate limit, zod), SQLite via better-sqlite3
-  src/routes/    health, complaints, chat
-e2e/             Playwright smoke tests
-scripts/         data tools (district generator, NASA POWER import)
+india-energy-planner/
+├── client/                  Vite + React 18 + TypeScript + Tailwind
+│   ├── public/data/         all data as JSON: districts, costs, india-boundary, subsidies, helplines, faq, sample-complaints
+│   └── src/
+│       ├── engine/          pure planning maths (resource, demand, sizing, costs, lifecycle, rollout, impact, plan) + tests
+│       ├── three/           react-three-fiber scenes (hero, 3D map, district diorama, system scene, procedural models)
+│       ├── pages/           one route per page
+│       ├── components/      layout, UI kit, planner widgets, charts
+│       ├── lib/             data loading, hooks, AI assistant client, offline complaints
+│       └── i18n/            en, hi, ta, bn strings
+├── server/                  Express + TypeScript (helmet, cors, rate limit, zod), SQLite via better-sqlite3
+│   └── src/routes/          health, complaints, chat
+├── e2e/                     Playwright smoke tests
+├── scripts/                 data tools (district generator, NASA POWER import)
+├── data-raw/                NASA POWER CSV drop folder
+├── docs/                    API, data, deployment guides and screenshots
+├── Dockerfile · render.yaml deployment configs
+└── .github/                 CI workflow and issue / PR templates
 ```
 
-## Updating data (no code needed)
+**Pages:** Home · Map · Planner · Costs · Rollout · Impact · Subsidies · Help · Complaints · Heatmap · Data & Assumptions.
 
-- **Costs:** edit `client/public/data/costs.json`. Each item has `value` (the default), optional `min`/`max`/`step` (slider range), `kind` (`sourced` or `assumption`) and `source` (a key into `sources`). Assumptions show an "Assumption" label in the app.
-- **Add a district:** add one object to `client/public/data/districts.json` with the same fields as the others: `id, name, state, category, lat, lon, population_est, demand_mwh_yr_est, ghi_monthly[12], wind50m_monthly[12], small_hydro_potential, biomass_potential, geothermal_potential, grid_access, diesel_dependence, sources, illustrative`. It appears on every page automatically.
-- **Real solar/wind data:** download NASA POWER monthly climatology CSVs (`ALLSKY_SFC_SW_DWN` and `WS50M`) per district from the [Data Access Viewer](https://power.larc.nasa.gov/data-access-viewer/), save them as `data-raw/<district-id>.csv`, then run `npm run import:nasa`. Those districts become `illustrative: false`.
-- **Subsidies:** edit `subsidies.json`. Each scheme lists `projectTypes`, `states` (`"all"` or a list), `status` (`active` / `transition`), `rules`, `url` and a `calc` block (`pmsg_home`, `per_kw_capped`, `pct` or `none`).
-- **Helplines:** edit `helplines.json`. Only confirmed numbers go in `number`; for DISCOMs, `discom_number` stays `"To verify"` until checked, with the official `url`.
-- **FAQ:** edit `faq.json` (`q` in en/hi/ta/bn, `a` in English, optional `tags` to help search).
-- `npm run data:districts` regenerates the illustrative values from `scripts/build-districts.mjs`. It overwrites `districts.json`, so don't run it after hand edits.
+## Documentation
 
-## Data sources
+- 📡 [API reference](docs/API.md): endpoints, examples, security
+- 📊 [Data, sources and assumptions](docs/DATA.md): updating data, sources, map boundary, sizing assumptions, translations
+- 🚀 [Deployment](docs/DEPLOYMENT.md): Render, Docker, offline/PWA
+- 🤝 [Contributing](CONTRIBUTING.md): workflow, branch and commit conventions
 
-Every sourced figure is listed in the app on **Data & Assumptions** (`/data`), linked from the footer. Main sources: Business Today (solar cost, PM Surya Ghar), QuickEstimate (batteries), Secured Engineers (diesel vs grid vs solar), CERC draft RE tariffs FY 2026-27, MNRE Solar Atlas + Solargis tiers (via InfraLens), Pulse / T&D India / Mercom (national figures), Ministry of Power (1912).
+## Important notes
 
-## Map boundary: please verify
-
-`client/public/data/india-boundary.geojson` is built from **DataMeet's Survey of India based state boundaries** (`States/Admin2` in https://github.com/datameet/maps, CC BY 4.0). It includes all of Jammu & Kashmir and Ladakh, following the official map of India. The file has 36 states/UTs plus a dissolved country outline, simplified for the web:
-
-```bash
-npx mapshaper -i Admin2.shp -rename-layers states -rename-fields name=ST_NM -simplify 1.6% keep-shapes weighted -clean \
-  -each 'kind="state"' -dissolve2 + name=country -each 'kind="country"; name="India"' target=country \
-  -merge-layers target=country,states force name=india -o format=geojson precision=0.001 india-boundary.geojson
-```
-
-**Flagged for verification:** check it against the Survey of India's official political map before publishing.
-
-## Key assumptions
-
-- Sizing uses each month's average day, not hourly weather: an estimate from monthly averages, not a guarantee.
-- The worst solar month includes one low-sun spell (storm slider, 1–5 days, solar at 35%). Battery autonomy goes from 1 day to 2 days across that range.
-- PV starts at demand ÷ (worst-month GHI × 0.75) × 1.1. The engine then adds PV or battery, whichever is cheaper per unit of shortfall removed, until the worst month meets ≥ 99% of demand.
-- The cheapest option (20-year NPV) that meets the target is recommended. Geothermal is shown only as potential and never sized.
 - District resource values are **illustrative** until NASA POWER data is imported.
+- The map boundary is **flagged for verification** against the Survey of India's official political map before publishing.
+- A native speaker must review the Hindi, Tamil and Bengali translations before public use.
 
-## Translations
+## Team
 
-English, Hindi, Tamil and Bengali cover every label, button, result sentence, chart axis, error message and FAQ question. FAQ answers and the long technical paragraphs on the Data & Assumptions page stay in English. District and state names stay in English. Numbers use the Indian format (lakh, crore).
-
-**A native speaker must review the Hindi, Tamil and Bengali translations before public use.** A unit test checks that every translation has the same keys and `{{placeholders}}` as English.
+| | |
+|---|---|
+| [@adityashukla44](https://github.com/adityashukla44) | Owner |
+| [@KushP246](https://github.com/KushP246) | Contributor |
